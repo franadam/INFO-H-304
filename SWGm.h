@@ -15,6 +15,18 @@ public:
     SWGm();
   //Destructor  
     SWGm(void);
+    
+  
+    string reference;
+    string query;
+
+    int bandwidth = 0;
+
+    int matchScore ;
+    int mismatchScore ;
+    int gapOpenPenalty ;
+    int gapExtendPenalty;
+    
 private:
   //create the matrix
   void CreateMatrix(pReference, pQuery)
