@@ -46,10 +46,9 @@ int main(int argc, char *argv[])
 	  int n = pReference.size();
 	  int m = pQuery.size();
 	  /* Allocation dynamique */
-	  t = new int* [ m];
+	  t = new int* [m+1];
 	  for (int i=0; i < m; i++)
-		t[i] = new int[ n ];
-	 
+		t[i] = new int[ n +1];
 	  /* Initialisation */
 	  for (int i=0; i < m; i++)
 		for (int j=0; j < n; j++)
